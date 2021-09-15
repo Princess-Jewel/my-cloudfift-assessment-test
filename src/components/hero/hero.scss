@@ -1,0 +1,145 @@
+.hero__wrapper {
+  position: relative;
+
+  .hero__container {
+    background: #06942a0d;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+    width: 70%;
+    height: 910px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hero__info {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    width: 86%;
+    margin: 30px auto;
+    z-index: 999;
+    transform: translate(0%);
+
+    .hero__text {
+      width: 80%;
+      margin: auto;
+
+      .hero__title {
+        font-family: var(--font-family-title);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.8rem;
+        line-height: 55px;
+        color: #3f403f;
+        margin-bottom: 2rem;
+
+        .job {
+          color: #06942a;
+        }
+      }
+
+      .hero__description {
+        font-family: var(--font-family-body);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 200%;
+        color: #3f403f;
+        margin-bottom: 2rem;
+      }
+
+      .trusted__wrapper {
+        .trusted__title {
+          font-family: var(--font-family-body);
+          font-style: normal;
+          font-weight: 500;
+          font-size: 0.86rem;
+          line-height: 150%;
+          color: #3f403f;
+          margin: 2rem 0 1.8rem;
+        }
+
+        .trusted__images {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+
+          .Paystack {
+            width: 156px;
+            height: 33px;
+          }
+
+          .Google {
+            width: 103px;
+            height: 43px;
+          }
+
+          .Kpmg {
+            width: 79px;
+            height: 33px;
+          }
+        }
+      }
+    }
+
+    .hero__image {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* styles */
+  .trusted__wrapper {
+    .trusted__title {
+      font-family: var(--font-family-body);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.86rem;
+      line-height: 150%;
+      color: #3f403f;
+      margin: 2rem 0 1.8rem;
+    }
+
+    .trusted__images {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 100%;
+
+      .Paystack,.Google,.Kpmg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 845px) {
+  /* styles */
+  .hero__wrapper {
+    .hero__container {
+      height: 670px;
+    }
+  }
+}
+
+@media screen and (max-width: 892px) {
+  /* styles */
+  .hero__wrapper {
+    .hero__info {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+
+      .hero__image {
+        width: 100%;
+      }
+    }
+  }
+}

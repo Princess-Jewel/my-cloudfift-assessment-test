@@ -1,0 +1,108 @@
+@import url("../assets/fonts/graphik/stylesheet.css");
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 86%;
+  margin: 0px auto;
+  padding-top: 15px;
+  transform: translate(0%);
+  z-index: 999;
+
+  // .nav_menu {
+  //   background-color: #0c0c0c;
+  //   width: 250px;
+  //   height: 100vh;
+  //   display: flex;
+  //   flex-direction: column;
+  //   position: fixed;
+  //   top: 0;
+  //   right: -100%;
+  //   transition: 850ms;
+  //   z-index: 1;
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  .logo-wrapper {
+    width: 20%;
+    ul {
+      li {
+        padding: 5px 0;
+        cursor: pointer;
+        transform: translate(0%);
+        z-index: 999;
+      }
+    }
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center !important;
+
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+
+      .nav-items {
+        font-family: var(--font-family-body);
+        margin: 0 0.8rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #3f403f;
+        padding: 5px 0;
+        cursor: pointer;
+        transform: translate(0%);
+        z-index: 999;
+      }
+
+      .auth-links {
+        font-family: var(--font-family-body);
+        margin-left: 1rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #3f403f;
+        padding: 5px 0;
+        cursor: pointer;
+        transform: translate(0%);
+        z-index: 999;
+      }
+
+      .login {
+        background: rgba(6, 148, 42, 0.2);
+        border-radius: 50px;
+        font-weight: 600;
+        color: #06942a;
+        padding: 5px 30px;
+      }
+    }
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Tablets, iPads (landscape) ---------- */
+@media screen and (max-width: 1065px) {
+  /* styles */
+  .header__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .nav-link {
+      display: none;
+    }
+    .mobile-nav {
+      display: block;
+    }
+  }
+}

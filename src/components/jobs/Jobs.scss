@@ -1,0 +1,56 @@
+.jobs__wrapper {
+  max-width: 93%;
+  margin: 200px 0 0 auto;
+
+  h2 {
+    font-family: var(--font-family-title);
+    font-size: 33px;
+    line-height: 41px;
+    color: #3f403f;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+
+  .slides {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+
+    .slide {
+      background: #ffffff;
+      box-shadow: 0px 10px 30px rgba(8, 8, 8, 0.05);
+      border-radius: 5px;
+      width: 100%;
+      padding: 20px;
+
+      .top-right {
+        display: flex;
+        justify-content: space-between;
+
+        .align-right {
+          text-align: right;
+          background: #e5e5e5;
+          padding: 3px 5px;
+          border-radius: 30px;
+          font-size: 10px;
+          line-height: 17px;
+          color: #9b9b9b;
+        }
+      }
+    }
+
+    img {
+      margin: 0 90px;
+      align-self: center;
+    }
+
+    h5 {
+      font-family: var(--font-family-title);
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 150%;
+      color: #3f403f;
+      text-align: center;
+    }
+  }
+}
