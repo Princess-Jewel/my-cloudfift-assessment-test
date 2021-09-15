@@ -44,16 +44,16 @@ const Footer = () => {
         <h5>Social Media:</h5>
         <ul>
           <li>
-            <img src={Facebook} alt='img' />
+            <img src={Facebook} alt='facebook' />
           </li>
           <li>
-            <img src={Twitter} alt='img' />
+            <img src={Twitter} alt='twitter' />
           </li>
           <li>
-            <img src={LinkedIn} alt='img' />
+            <img src={LinkedIn} alt='linkedin' />
           </li>
           <li>
-            <img src={Instagram} alt='img' />
+            <img src={Instagram} alt='instagram' />
           </li>
         </ul>
       </div>
