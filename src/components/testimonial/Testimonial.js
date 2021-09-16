@@ -56,9 +56,8 @@ class Testimonial extends Component {
     };
     return (
     <div className="testimonial__wrapper">
-  <div className="testimonials">
-        <div className="title testimonials-title">
-          <h4 className="">What are our customers <br /> saying</h4>
+        <div className="title testimonials-title ">
+          <h2 className="">What are our customers <br /> saying</h2>
         </div>
         <div className="testimonial-slider-container">
           <div className="slick-btn-container" style={{ textAlign: "right" }}>
@@ -79,7 +78,7 @@ class Testimonial extends Component {
           </Slider>
         </div>
       </div>
-      </div>
+   
     );
   }
 }
